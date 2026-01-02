@@ -1,0 +1,101 @@
+export type Locale = 'en' | 'uk' | 'ru';
+
+export interface Translations {
+	common: {
+		feToolbox: string;
+		madeBy: string;
+		donate: string;
+		privacy: string;
+		about: string;
+		privacyFirst: string;
+		noTracking: string;
+		localOnly: string;
+		builtBy: string;
+		moreToolsComing: string;
+		copy: string;
+		clear: string;
+		parse: string;
+	};
+	nav: {
+		cssGradientGenerator: string;
+	};
+	home: {
+		title: string;
+		description: string;
+		cssGradientGenerator: {
+			title: string;
+			description: string;
+			tags: string[];
+		};
+	};
+	cssGradientGenerator: {
+		title: string;
+		description: string;
+		heading: string;
+		subtitle: string;
+		gradientType: string;
+		linear: string;
+		radial: string;
+		conic: string;
+		angle: string;
+		radialShape: string;
+		circle: string;
+		ellipse: string;
+		radialPosition: string;
+		conicPosition: string;
+		custom: string;
+		colorStops: string;
+		addStop: string;
+		removeStop: string;
+		reset: string;
+		color: string;
+		position: string;
+		opacity: string;
+		preview: string;
+		checkerboard: string;
+		output: string;
+		outputMode: string;
+		background: string;
+		backgroundImage: string;
+		cssVariable: string;
+		withFallback: string;
+		presets: string;
+		selectPreset: string;
+		cssCode: string;
+		copy: string;
+		copied: string;
+		whatIs: string;
+		whatIsDescription: string;
+		whenToUse: string;
+		whenToUse1: string;
+		whenToUse2: string;
+		whenToUse3: string;
+		commonMistakes: string;
+		commonMistakes1: string;
+		commonMistakes2: string;
+		commonMistakes3: string;
+		notes: string;
+		notes1: string;
+		notes2: string;
+		notes3: string;
+		privacy: string;
+		privacyText: string;
+	};
+	privacy: {
+		title: string;
+		description: string;
+		heading: string;
+		intro: string;
+		introLocal: string;
+		noDataCollection: string;
+		noDataCollectionText: string;
+		noAnalytics: string;
+		noAnalyticsText: string;
+		noBackend: string;
+		noBackendText: string;
+		openSource: string;
+		openSourceText: string;
+		yourData: string;
+		yourDataText: string;
+	};
+}

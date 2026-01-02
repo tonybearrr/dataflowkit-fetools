@@ -1,0 +1,67 @@
+@import 'tailwindcss';
+
+:root {
+	/* Coffee theme - warm, calm, professional */
+	--color-bg: #faf8f5; /* Warm off-white / beige */
+	--color-bg-secondary: #f5f1eb; /* Latte */
+	--color-bg-tertiary: #ede8e0; /* Warm sand */
+	--color-border: #d4c5b0; /* Soft warm gray */
+	--color-text: #2c2416; /* Dark espresso */
+	--color-text-muted: #6b5d47; /* Coffee brown muted */
+	--color-accent: #8b6f47; /* Coffee brown */
+	--color-accent-hover: #6b5435; /* Darker coffee */
+	--color-success: #7a8b5f; /* Warm green */
+	--color-warning: #c49a6c; /* Caramel */
+	--color-error: #b8866b; /* Warm amber-red */
+}
+
+body {
+	font-family: 'JetBrains Mono', 'Fira Code', 'SF Mono', monospace;
+	background-color: var(--color-bg);
+	color: var(--color-text);
+	transition: background 0.3s ease;
+}
+
+/* Gradient background support */
+:root.gradient-background {
+	position: relative;
+	min-height: 100vh;
+}
+
+:root.gradient-background::before {
+	content: '';
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: -1;
+	background: var(--app-gradient);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	transition: background 0.1s linear;
+}
+
+/* For radial/conic gradients using CSS variables, make body transparent */
+/* But NOT for linear gradients which are set directly on body */
+:root.gradient-background body:not(.has-linear-gradient) {
+	background: transparent !important;
+}
+
+/* Make main content area transparent ONLY for radial/conic (not for linear on body) */
+:root.gradient-background body:not(.has-linear-gradient) .min-h-screen,
+:root.gradient-background body:not(.has-linear-gradient) main,
+:root.gradient-background body:not(.has-linear-gradient) footer {
+	background: transparent !important;
+}
+
+/* For linear gradient on body, keep elements semi-transparent to show gradient through */
+body.has-linear-gradient .min-h-screen,
+body.has-linear-gradient main {
+	background: transparent !important;
+}
+
+body.has-linear-gradient footer {
+	background: var(--color-bg-secondary) !important;
+}
