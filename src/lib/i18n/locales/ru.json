@@ -15,7 +15,8 @@
 		"parse": "Распарсить"
 	},
 	"nav": {
-		"cssGradientGenerator": "CSS Градиенты"
+		"cssGradientGenerator": "CSS Градиенты",
+		"shadowGlassGenerator": "Тени и Стекло"
 	},
 	"home": {
 		"title": "FE Toolbox",
@@ -24,6 +25,11 @@
 			"title": "Генератор CSS градиентов",
 			"description": "Генерируйте линейные градиенты с контролем угла и цветов. Получите CSS код мгновенно.",
 			"tags": ["CSS", "Градиент", "Дизайн"]
+		},
+		"shadowGlassGenerator": {
+			"title": "Генератор Теней и Стекла",
+			"description": "Создавайте тени и стеклянные панели. Копируйте CSS мгновенно.",
+			"tags": ["CSS", "UI", "Эффекты"]
 		}
 	},
 	"cssGradientGenerator": {
@@ -78,6 +84,39 @@
 		"notes3": "Тестируйте градиенты на разных размерах экранов и устройствах",
 		"privacy": "Конфиденциальность",
 		"privacyText": "Вся обработка происходит локально в вашем браузере. Никакие данные не отправляются на сервер."
+	},
+	"shadowGlassGenerator": {
+		"title": "Генератор Теней и Стекла - FE Toolbox",
+		"description": "Создавайте тени и стеклянные панели. Генерируйте CSS для box-shadow, drop-shadow и backdrop-filter эффектов. Вся обработка происходит локально в вашем браузере.",
+		"heading": "Генератор Теней и Стекла",
+		"subtitle": "Создавайте тени и стеклянные панели — копируйте CSS мгновенно.",
+		"tabShadow": "Тени",
+		"tabGlass": "Стекло",
+		"preview": "Предпросмотр",
+		"previewOptions": "Опции предпросмотра",
+		"showGridBackground": "Показать сетчатый фон",
+		"background": "Фон",
+		"light": "Светлый",
+		"dark": "Тёмный",
+		"customBackground": "Свой фон",
+		"textColor": "Цвет текста",
+		"enterCssCode": "Введите CSS код (только значение после",
+		"cssOutput": "CSS Вывод",
+		"copyCss": "Копировать CSS",
+		"copyValues": "Копировать значения",
+		"copy": "Копировать",
+		"copied": "Скопировано!",
+		"tailwindValues": "Значения в стиле Tailwind (для справки)",
+		"copyAsTailwind": "Копировать как заметки в стиле Tailwind (только значения)",
+		"shadowType": "Тип тени",
+		"presets": "Пресеты",
+		"layers": "Слои",
+		"reset": "Сбросить",
+		"blurStrength": "Сила размытия",
+		"glassTint": "Оттенок стекла",
+		"backgroundBrightness": "Яркость фона",
+		"border": "Рамка",
+		"shadow": "Тень"
 	},
 	"privacy": {
 		"title": "Политика конфиденциальности - FE Toolbox",

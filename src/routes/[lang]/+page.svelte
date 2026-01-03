@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { page } from '$app/stores';
 	import { locale, tReactive, tStringReactive, getPath, type Locale } from '$lib/i18n';
-	import { Palette, Wrench } from 'lucide-svelte';
+	import { Palette, Wrench, Layers } from 'lucide-svelte';
 
 	const lang = $derived(($page.params.lang || 'en') as Locale);
 	const baseUrl = 'https://fetools.dataflowkit.dev';
@@ -51,7 +51,8 @@
 				"url": "https://tonylab.dev/${tonylabLang}"
 			},
 			"featureList": [
-				"CSS Gradient Generator"
+				"CSS Gradient Generator",
+				"Shadow & Glass Generator"
 			]
 		}
 		</script>
@@ -86,6 +87,34 @@
 			</p>
 			<div class="mt-4 flex flex-wrap gap-2">
 				{#each (tReactive('home.cssGradientGenerator.tags', $locale) as string[]) as tag}
+					<span
+						class="text-xs px-2 py-1 rounded bg-[var(--color-bg-tertiary)] text-[var(--color-text-muted)]"
+					>
+						{tag}
+					</span>
+				{/each}
+			</div>
+		</a>
+
+		<a
+			href={getPath('/shadow-glass-generator', lang)}
+			class="group p-6 rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-secondary)] hover:border-[var(--color-accent)] transition-all hover:shadow-lg"
+			style="--hover-shadow-color: rgba(139, 111, 71, 0.1);"
+		>
+			<div
+				class="w-12 h-12 rounded-lg flex items-center justify-center mb-4 transition-colors"
+				style="background-color: rgba(139, 111, 71, 0.1);"
+			>
+				<Layers class="w-6 h-6" style="color: var(--color-accent);" />
+			</div>
+			<h2 class="text-lg font-semibold mb-2 transition-colors" style="color: var(--color-text);">
+				{tStringReactive('home.shadowGlassGenerator.title', $locale)}
+			</h2>
+			<p class="text-sm text-[var(--color-text-muted)]">
+				{tStringReactive('home.shadowGlassGenerator.description', $locale)}
+			</p>
+			<div class="mt-4 flex flex-wrap gap-2">
+				{#each (tReactive('home.shadowGlassGenerator.tags', $locale) as string[]) as tag}
 					<span
 						class="text-xs px-2 py-1 rounded bg-[var(--color-bg-tertiary)] text-[var(--color-text-muted)]"
 					>

@@ -15,7 +15,8 @@
 		"parse": "Розпарсити"
 	},
 	"nav": {
-		"cssGradientGenerator": "CSS Градієнти"
+		"cssGradientGenerator": "CSS Градієнти",
+		"shadowGlassGenerator": "Тіні та Скла"
 	},
 	"home": {
 		"title": "FE Toolbox",
@@ -24,6 +25,11 @@
 			"title": "Генератор CSS градієнтів",
 			"description": "Генеруйте лінійні градієнти з контролем кута та кольорів. Отримайте CSS код миттєво.",
 			"tags": ["CSS", "Градієнт", "Дизайн"]
+		},
+		"shadowGlassGenerator": {
+			"title": "Генератор Тіней та Скла",
+			"description": "Створюйте тіні та скляні панелі. Копіюйте CSS миттєво.",
+			"tags": ["CSS", "UI", "Ефекти"]
 		}
 	},
 	"cssGradientGenerator": {
@@ -78,6 +84,39 @@
 		"notes3": "Тестуйте градієнти на різних розмірах екранів та пристроях",
 		"privacy": "Конфіденційність",
 		"privacyText": "Вся обробка відбувається локально у вашому браузері. Жодні дані не надсилаються на сервер."
+	},
+	"shadowGlassGenerator": {
+		"title": "Генератор Тіней та Скла - FE Toolbox",
+		"description": "Створюйте тіні та скляні панелі. Генеруйте CSS для box-shadow, drop-shadow та backdrop-filter ефектів. Вся обробка відбувається локально у вашому браузері.",
+		"heading": "Генератор Тіней та Скла",
+		"subtitle": "Створюйте тіні та скляні панелі — копіюйте CSS миттєво.",
+		"tabShadow": "Тіні",
+		"tabGlass": "Скло",
+		"preview": "Попередній перегляд",
+		"previewOptions": "Опції попереднього перегляду",
+		"showGridBackground": "Показати сітчастий фон",
+		"background": "Фон",
+		"light": "Світлий",
+		"dark": "Темний",
+		"customBackground": "Власний фон",
+		"textColor": "Колір тексту",
+		"enterCssCode": "Введіть CSS код (тільки значення після",
+		"cssOutput": "CSS Вивід",
+		"copyCss": "Копіювати CSS",
+		"copyValues": "Копіювати значення",
+		"copy": "Копіювати",
+		"copied": "Скопійовано!",
+		"tailwindValues": "Значення у стилі Tailwind (для довідки)",
+		"copyAsTailwind": "Копіювати як примітки у стилі Tailwind (тільки значення)",
+		"shadowType": "Тип тіні",
+		"presets": "Пресети",
+		"layers": "Шари",
+		"reset": "Скинути",
+		"blurStrength": "Сила розмиття",
+		"glassTint": "Відтінок скла",
+		"backgroundBrightness": "Яскравість фону",
+		"border": "Рамка",
+		"shadow": "Тінь"
 	},
 	"privacy": {
 		"title": "Політика конфіденційності - FE Toolbox",

@@ -107,6 +107,22 @@
 		e.preventDefault();
 		isDragging = true;
 		updatePickerPosition(e);
+		
+		const handleMove = (e: MouseEvent) => {
+			if (isDragging) {
+				e.preventDefault();
+				updatePickerPosition(e);
+			}
+		};
+		
+		const handleUp = () => {
+			isDragging = false;
+			window.removeEventListener('mousemove', handleMove);
+			window.removeEventListener('mouseup', handleUp);
+		};
+		
+		window.addEventListener('mousemove', handleMove);
+		window.addEventListener('mouseup', handleUp);
 	}
 	
 	function handlePickerMouseMove(e: MouseEvent) {
@@ -119,33 +135,6 @@
 	function handlePickerMouseUp() {
 		isDragging = false;
 	}
-	
-	// Global mouse events for dragging
-	$effect(() => {
-		if (isDragging) {
-			const handleMove = (e: MouseEvent) => handlePickerMouseMove(e);
-			const handleUp = () => handlePickerMouseUp();
-			window.addEventListener('mousemove', handleMove);
-			window.addEventListener('mouseup', handleUp);
-			return () => {
-				window.removeEventListener('mousemove', handleMove);
-				window.removeEventListener('mouseup', handleUp);
-			};
-		}
-	});
-	
-	$effect(() => {
-		if (isDraggingSpectrum) {
-			const handleMove = (e: MouseEvent) => handleSpectrumMouseMove(e);
-			const handleUp = () => handleSpectrumMouseUp();
-			window.addEventListener('mousemove', handleMove);
-			window.addEventListener('mouseup', handleUp);
-			return () => {
-				window.removeEventListener('mousemove', handleMove);
-				window.removeEventListener('mouseup', handleUp);
-			};
-		}
-	});
 	
 	function updatePickerPosition(e: MouseEvent) {
 		if (!pickerArea) return;
@@ -161,6 +150,22 @@
 		e.preventDefault();
 		isDraggingSpectrum = true;
 		updateSpectrumPosition(e);
+		
+		const handleMove = (e: MouseEvent) => {
+			if (isDraggingSpectrum) {
+				e.preventDefault();
+				updateSpectrumPosition(e);
+			}
+		};
+		
+		const handleUp = () => {
+			isDraggingSpectrum = false;
+			window.removeEventListener('mousemove', handleMove);
+			window.removeEventListener('mouseup', handleUp);
+		};
+		
+		window.addEventListener('mousemove', handleMove);
+		window.addEventListener('mouseup', handleUp);
 	}
 	
 	function handleSpectrumMouseMove(e: MouseEvent) {

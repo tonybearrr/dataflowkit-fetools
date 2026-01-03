@@ -51,6 +51,12 @@
 					>
 						{tStringReactive('nav.cssGradientGenerator', $locale)}
 					</a>
+					<a
+						href={getPath('/shadow-glass-generator', langFromPath)}
+						class="text-sm transition-colors {$page.url.pathname.includes('/shadow-glass-generator') ? 'text-[var(--color-text)]' : 'text-[var(--color-text-muted)] hover:text-[var(--color-text)]'}"
+					>
+						{tStringReactive('nav.shadowGlassGenerator', $locale)}
+					</a>
 				</nav>
 
 				<div class="flex items-center gap-2 sm:gap-4">
@@ -101,6 +107,13 @@
 							class="px-4 py-2 text-sm transition-colors rounded hover:bg-[var(--color-bg-tertiary)] {$page.url.pathname.includes('/css-gradient-generator') ? 'text-[var(--color-text)] bg-[var(--color-bg-tertiary)]' : 'text-[var(--color-text-muted)]'}"
 						>
 							{tStringReactive('nav.cssGradientGenerator', $locale)}
+						</a>
+						<a
+							href={getPath('/shadow-glass-generator', langFromPath)}
+							onclick={closeMobileMenu}
+							class="px-4 py-2 text-sm transition-colors rounded hover:bg-[var(--color-bg-tertiary)] {$page.url.pathname.includes('/shadow-glass-generator') ? 'text-[var(--color-text)] bg-[var(--color-bg-tertiary)]' : 'text-[var(--color-text-muted)]'}"
+						>
+							{tStringReactive('nav.shadowGlassGenerator', $locale)}
 						</a>
 					</div>
 				</nav>

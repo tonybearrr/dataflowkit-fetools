@@ -15,7 +15,8 @@
 		"parse": "Parse"
 	},
 	"nav": {
-		"cssGradientGenerator": "CSS Gradients"
+		"cssGradientGenerator": "CSS Gradients",
+		"shadowGlassGenerator": "Shadow & Glass"
 	},
 	"home": {
 		"title": "FE Toolbox",
@@ -24,6 +25,11 @@
 			"title": "CSS Gradient Generator",
 			"description": "Generate linear gradients with angle and color controls. Get CSS code instantly.",
 			"tags": ["CSS", "Gradient", "Design"]
+		},
+		"shadowGlassGenerator": {
+			"title": "Shadow & Glass Generator",
+			"description": "Design shadows and glassmorphism panels. Copy CSS instantly.",
+			"tags": ["CSS", "UI", "Effects"]
 		}
 	},
 	"cssGradientGenerator": {
@@ -78,6 +84,39 @@
 		"notes3": "Test gradients on different screen sizes and devices",
 		"privacy": "Privacy",
 		"privacyText": "All processing happens locally in your browser. No data is sent to any server."
+	},
+	"shadowGlassGenerator": {
+		"title": "Shadow & Glass Generator - FE Toolbox",
+		"description": "Design shadows and glassmorphism panels. Generate CSS for box-shadow, drop-shadow, and backdrop-filter effects. All processing happens locally in your browser.",
+		"heading": "Shadow & Glass Generator",
+		"subtitle": "Design shadows and glassmorphism panels — copy CSS instantly.",
+		"tabShadow": "Shadow",
+		"tabGlass": "Glass",
+		"preview": "Preview",
+		"previewOptions": "Preview Options",
+		"showGridBackground": "Show grid background",
+		"background": "Background",
+		"light": "Light",
+		"dark": "Dark",
+		"customBackground": "Custom Background",
+		"textColor": "Text Color",
+		"enterCssCode": "Enter CSS code (only the value after",
+		"cssOutput": "CSS Output",
+		"copyCss": "Copy CSS",
+		"copyValues": "Copy Values",
+		"copy": "Copy",
+		"copied": "Copied!",
+		"tailwindValues": "Tailwind-ish values (for reference)",
+		"copyAsTailwind": "Copy as Tailwind-ish notes (just values)",
+		"shadowType": "Shadow Type",
+		"presets": "Presets",
+		"layers": "Layers",
+		"reset": "Reset",
+		"blurStrength": "Blur Strength",
+		"glassTint": "Glass Tint",
+		"backgroundBrightness": "Background Brightness",
+		"border": "Border",
+		"shadow": "Shadow"
 	},
 	"privacy": {
 		"title": "Privacy - FE Toolbox",
