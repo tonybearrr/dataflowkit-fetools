@@ -433,6 +433,37 @@
 			</div>
 		{/if}
 	</div>
+
+	<!-- Explanation / SEO Blocks -->
+	<div class="mt-12 space-y-8">
+		<section>
+			<h2 class="text-2xl font-semibold mb-4">{tStringReactive('shadowGlassGenerator.whatIs', $locale)}</h2>
+			<p class="text-[var(--color-text-muted)] leading-relaxed mb-4">
+				{tStringReactive('shadowGlassGenerator.whatIsDescription', $locale)}
+			</p>
+		</section>
+
+		<section>
+			<h2 class="text-2xl font-semibold mb-4">{tStringReactive('shadowGlassGenerator.whenToUse', $locale)}</h2>
+			<p class="text-[var(--color-text-muted)] leading-relaxed">
+				{tStringReactive('shadowGlassGenerator.whenToUse1', $locale)}
+			</p>
+		</section>
+
+		<section>
+			<h2 class="text-2xl font-semibold mb-4">{tStringReactive('shadowGlassGenerator.commonMistakes', $locale)}</h2>
+			<p class="text-[var(--color-text-muted)] leading-relaxed">
+				{tStringReactive('shadowGlassGenerator.commonMistakes1', $locale)}
+			</p>
+		</section>
+
+		<section>
+			<h2 class="text-2xl font-semibold mb-4">{tStringReactive('shadowGlassGenerator.notes', $locale)}</h2>
+			<p class="text-[var(--color-text-muted)] leading-relaxed">
+				{tStringReactive('shadowGlassGenerator.notes1', $locale)}
+			</p>
+		</section>
+	</div>
 </div>
 
 <style>

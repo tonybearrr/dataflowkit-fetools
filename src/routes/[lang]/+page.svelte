@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { page } from '$app/stores';
 	import { locale, tReactive, tStringReactive, getPath, type Locale } from '$lib/i18n';
-	import { Palette, Wrench, Layers } from 'lucide-svelte';
+	import { Palette, Type, Layers } from 'lucide-svelte';
 
 	const lang = $derived(($page.params.lang || 'en') as Locale);
 	const baseUrl = 'https://fetools.dataflowkit.dev';
@@ -52,7 +52,8 @@
 			},
 			"featureList": [
 				"CSS Gradient Generator",
-				"Shadow & Glass Generator"
+				"Shadow & Glass Generator",
+				"Clamp / Fluid Typography Generator"
 			]
 		}
 		</script>
@@ -124,15 +125,32 @@
 			</div>
 		</a>
 
-		<div
-			class="p-6 rounded-lg border border-dashed border-[var(--color-border)] bg-[var(--color-bg-secondary)]/50 flex flex-col items-center justify-center text-center"
+		<a
+			href={getPath('/clamp-typography-generator', lang)}
+			class="group p-6 rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-secondary)] hover:border-[var(--color-accent)] transition-all hover:shadow-lg"
+			style="--hover-shadow-color: rgba(139, 111, 71, 0.1);"
 		>
 			<div
-				class="w-12 h-12 rounded-lg bg-[var(--color-bg-tertiary)] flex items-center justify-center mb-4"
+				class="w-12 h-12 rounded-lg flex items-center justify-center mb-4 transition-colors"
+				style="background-color: rgba(139, 111, 71, 0.1);"
 			>
-				<Wrench class="w-6 h-6 text-[var(--color-text-muted)] opacity-50" />
+				<Type class="w-6 h-6" style="color: var(--color-accent);" />
 			</div>
-			<p class="text-sm text-[var(--color-text-muted)]">{tStringReactive('common.moreToolsComing', $locale)}</p>
+			<h2 class="text-lg font-semibold mb-2 transition-colors" style="color: var(--color-text);">
+				{tStringReactive('home.clampTypography.title', $locale)}
+			</h2>
+			<p class="text-sm text-[var(--color-text-muted)]">
+				{tStringReactive('home.clampTypography.description', $locale)}
+			</p>
+			<div class="mt-4 flex flex-wrap gap-2">
+				{#each (tReactive('home.clampTypography.tags', $locale) as string[]) as tag}
+					<span
+						class="text-xs px-2 py-1 rounded bg-[var(--color-bg-tertiary)] text-[var(--color-text-muted)]"
+					>
+						{tag}
+					</span>
+				{/each}
 		</div>
+		</a>
 	</div>
 </div>

@@ -881,33 +881,27 @@
 				<h3 class="text-lg font-semibold mb-3">
 					{tStringReactive('cssGradientGenerator.whenToUse', $locale)}
 				</h3>
-				<ul class="list-disc list-inside space-y-2 text-[var(--color-text-muted)]">
-					<li>{tStringReactive('cssGradientGenerator.whenToUse1', $locale)}</li>
-					<li>{tStringReactive('cssGradientGenerator.whenToUse2', $locale)}</li>
-					<li>{tStringReactive('cssGradientGenerator.whenToUse3', $locale)}</li>
-				</ul>
+				<p class="text-[var(--color-text-muted)] leading-relaxed">
+					{tStringReactive('cssGradientGenerator.whenToUse1', $locale)}
+				</p>
 			</div>
 
 			<div>
 				<h3 class="text-lg font-semibold mb-3">
 					{tStringReactive('cssGradientGenerator.commonMistakes', $locale)}
 				</h3>
-				<ul class="list-disc list-inside space-y-2 text-[var(--color-text-muted)]">
-					<li>{tStringReactive('cssGradientGenerator.commonMistakes1', $locale)}</li>
-					<li>{tStringReactive('cssGradientGenerator.commonMistakes2', $locale)}</li>
-					<li>{tStringReactive('cssGradientGenerator.commonMistakes3', $locale)}</li>
-				</ul>
+				<p class="text-[var(--color-text-muted)] leading-relaxed">
+					{tStringReactive('cssGradientGenerator.commonMistakes1', $locale)}
+				</p>
 			</div>
 
 			<div>
 				<h3 class="text-lg font-semibold mb-3">
 					{tStringReactive('cssGradientGenerator.notes', $locale)}
 				</h3>
-				<ul class="list-disc list-inside space-y-2 text-[var(--color-text-muted)]">
-					<li>{tStringReactive('cssGradientGenerator.notes1', $locale)}</li>
-					<li>{tStringReactive('cssGradientGenerator.notes2', $locale)}</li>
-					<li>{tStringReactive('cssGradientGenerator.notes3', $locale)}</li>
-				</ul>
+				<p class="text-[var(--color-text-muted)] leading-relaxed">
+					{tStringReactive('cssGradientGenerator.notes1', $locale)}
+				</p>
 			</div>
 
 			<div class="pt-4 border-t border-[var(--color-border)]">
