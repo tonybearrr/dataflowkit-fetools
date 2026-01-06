@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { page } from '$app/stores';
 	import { locale, tReactive, tStringReactive, getPath, type Locale } from '$lib/i18n';
-	import { Palette, Type, Layers } from 'lucide-svelte';
+	import { Palette, Type, Layers, Wrench } from 'lucide-svelte';
 
 	const lang = $derived(($page.params.lang || 'en') as Locale);
 	const baseUrl = 'https://fetools.dataflowkit.dev';
@@ -71,16 +71,14 @@
 	<div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
 		<a
 			href={getPath('/css-gradient-generator', lang)}
-			class="group p-6 rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-secondary)] hover:border-[var(--color-accent)] transition-all hover:shadow-lg"
-			style="--hover-shadow-color: rgba(139, 111, 71, 0.1);"
+			class="group p-6 rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-secondary)] hover:border-purple-400 transition-all hover:shadow-lg hover:shadow-purple-400/10"
 		>
 			<div
-				class="w-12 h-12 rounded-lg flex items-center justify-center mb-4 transition-colors"
-				style="background-color: rgba(139, 111, 71, 0.1);"
+				class="w-12 h-12 rounded-lg bg-purple-500/10 flex items-center justify-center mb-4 group-hover:bg-purple-500/15 transition-colors"
 			>
-				<Palette class="w-6 h-6" style="color: var(--color-accent);" />
+				<Palette class="w-6 h-6 text-purple-400" />
 			</div>
-			<h2 class="text-lg font-semibold mb-2 transition-colors" style="color: var(--color-text);">
+			<h2 class="text-lg font-semibold mb-2 group-hover:text-purple-400 transition-colors">
 				{tStringReactive('home.cssGradientGenerator.title', $locale)}
 			</h2>
 			<p class="text-sm text-[var(--color-text-muted)]">
@@ -99,16 +97,14 @@
 
 		<a
 			href={getPath('/shadow-glass-generator', lang)}
-			class="group p-6 rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-secondary)] hover:border-[var(--color-accent)] transition-all hover:shadow-lg"
-			style="--hover-shadow-color: rgba(139, 111, 71, 0.1);"
+			class="group p-6 rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-secondary)] hover:border-indigo-400 transition-all hover:shadow-lg hover:shadow-indigo-400/10"
 		>
 			<div
-				class="w-12 h-12 rounded-lg flex items-center justify-center mb-4 transition-colors"
-				style="background-color: rgba(139, 111, 71, 0.1);"
+				class="w-12 h-12 rounded-lg bg-indigo-500/10 flex items-center justify-center mb-4 group-hover:bg-indigo-500/15 transition-colors"
 			>
-				<Layers class="w-6 h-6" style="color: var(--color-accent);" />
+				<Layers class="w-6 h-6 text-indigo-400" />
 			</div>
-			<h2 class="text-lg font-semibold mb-2 transition-colors" style="color: var(--color-text);">
+			<h2 class="text-lg font-semibold mb-2 group-hover:text-indigo-400 transition-colors">
 				{tStringReactive('home.shadowGlassGenerator.title', $locale)}
 			</h2>
 			<p class="text-sm text-[var(--color-text-muted)]">
@@ -127,16 +123,14 @@
 
 		<a
 			href={getPath('/clamp-typography-generator', lang)}
-			class="group p-6 rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-secondary)] hover:border-[var(--color-accent)] transition-all hover:shadow-lg"
-			style="--hover-shadow-color: rgba(139, 111, 71, 0.1);"
+			class="group p-6 rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-secondary)] hover:border-emerald-400 transition-all hover:shadow-lg hover:shadow-emerald-400/10"
 		>
 			<div
-				class="w-12 h-12 rounded-lg flex items-center justify-center mb-4 transition-colors"
-				style="background-color: rgba(139, 111, 71, 0.1);"
+				class="w-12 h-12 rounded-lg bg-emerald-500/10 flex items-center justify-center mb-4 group-hover:bg-emerald-500/15 transition-colors"
 			>
-				<Type class="w-6 h-6" style="color: var(--color-accent);" />
+				<Type class="w-6 h-6 text-emerald-400" />
 			</div>
-			<h2 class="text-lg font-semibold mb-2 transition-colors" style="color: var(--color-text);">
+			<h2 class="text-lg font-semibold mb-2 group-hover:text-emerald-400 transition-colors">
 				{tStringReactive('home.clampTypography.title', $locale)}
 			</h2>
 			<p class="text-sm text-[var(--color-text-muted)]">
@@ -150,7 +144,18 @@
 						{tag}
 					</span>
 				{/each}
-		</div>
+			</div>
 		</a>
+
+		<div
+			class="p-6 rounded-lg border border-dashed border-[var(--color-border)] bg-[var(--color-bg-secondary)]/50 flex flex-col items-center justify-center text-center"
+		>
+			<div
+				class="w-12 h-12 rounded-lg bg-[var(--color-bg-tertiary)] flex items-center justify-center mb-4"
+			>
+				<Wrench class="w-6 h-6 text-[var(--color-text-muted)] opacity-50" />
+			</div>
+			<p class="text-sm text-[var(--color-text-muted)]">{tStringReactive('common.moreToolsComing', $locale)}</p>
+		</div>
 	</div>
 </div>

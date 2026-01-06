@@ -407,11 +407,8 @@
 <div class="max-w-7xl mx-auto px-4 py-8">
 	<header class="mb-6 sm:mb-8">
 		<div class="flex gap-3 mb-4">
-			<div
-				class="w-12 h-12 rounded-lg flex items-center justify-center"
-				style="background-color: rgba(139, 111, 71, 0.1);"
-			>
-				<Palette class="w-6 h-6" style="color: var(--color-accent);" />
+			<div class="w-12 h-12 rounded-lg bg-purple-500/10 flex items-center justify-center">
+				<Palette class="w-6 h-6 text-purple-400" />
 			</div>
 			<div>
 				<h1 class="text-2xl sm:text-3xl font-bold mb-3">

@@ -1,19 +1,51 @@
 @import 'tailwindcss';
 
 :root {
-	/* Coffee theme - warm, calm, professional */
-	--color-bg: #faf8f5; /* Warm off-white / beige */
-	--color-bg-secondary: #f5f1eb; /* Latte */
-	--color-bg-tertiary: #ede8e0; /* Warm sand */
-	--color-border: #d4c5b0; /* Soft warm gray */
-	--color-text: #2c2416; /* Dark espresso */
-	--color-text-muted: #6b5d47; /* Coffee brown muted */
-	--color-accent: #8b6f47; /* Coffee brown */
-	--color-accent-hover: #6b5435; /* Darker coffee */
-	--color-success: #7a8b5f; /* Warm green */
-	--color-warning: #c49a6c; /* Caramel */
-	--color-error: #b8866b; /* Warm amber-red */
+
+	--color-bg: #faf8f5;
+	--color-bg-secondary: #f5f1eb;
+	--color-bg-tertiary: #ede8e0;
+	--color-border: #d4c5b0;
+	--color-text: #2c2416;
+	--color-text-muted: #6b5d47;
+	--color-accent: #8b6f47;
+	--color-accent-hover: #6b5435;
+	--color-success: #7a8b5f;
+	--color-warning: #c49a6c;
+	--color-error: #b8866b;
 }
+
+/* Dark theme - modern, sleek, high contrast */
+
+ /* :root {
+	--color-bg: #1a1a1a;
+	--color-bg-secondary: #242424;	
+	--color-bg-tertiary: #2d2d2d;
+	--color-border: #404040;
+	--color-text: #e0e0e0;
+	--color-text-muted: #a0a0a0;
+	--color-accent: #4a9eff;
+	--color-accent-hover: #3a8eef;
+	--color-success: #4ade80;
+	--color-warning: #fbbf24;
+	--color-error: #f87171;
+} */
+/* Blue theme - cool, professional, tech-focused */
+
+/* :root {
+	--color-bg: #f0f4f8;
+	--color-bg-secondary: #e0e0e0;
+	--color-bg-tertiary: #d1dde8;
+	--color-border: #b8c5d1;
+	--color-text: #1e293b;
+	--color-text-muted: #64748b;
+	--color-accent: #3b82f6;
+	--color-accent-hover: #2563eb;
+	--color-success: #10b981;
+	--color-warning: #f59e0b;
+	--color-error: #ef4444;
+} */
+
 
 body {
 	font-family: 'JetBrains Mono', 'Fira Code', 'SF Mono', monospace;

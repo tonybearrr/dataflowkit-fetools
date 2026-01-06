@@ -15,9 +15,9 @@
 		"parse": "Распарсить"
 	},
 	"nav": {
-		"cssGradientGenerator": "CSS Градиенты",
-		"shadowGlassGenerator": "Тени и Стекло",
-		"clampTypography": "Clamp Типографика"
+		"cssGradientGenerator": "CSS Gradients",
+		"shadowGlassGenerator": "Shadow & Glass",
+		"clampTypography": "Clamp Typography"
 	},
 	"home": {
 		"title": "FE Toolbox",
