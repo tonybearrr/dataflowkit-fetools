@@ -444,23 +444,108 @@
 		</section>
 
 		<section>
+			<h2 class="text-2xl font-semibold mb-4">{tStringReactive('shadowGlassGenerator.parameters', $locale)}</h2>
+			<ul class="text-[var(--color-text-muted)] leading-relaxed space-y-1 list-disc list-inside">
+				{#if tStringReactive('shadowGlassGenerator.parameters1', $locale)}
+					<li>{tStringReactive('shadowGlassGenerator.parameters1', $locale)}</li>
+				{/if}
+				{#if tStringReactive('shadowGlassGenerator.parameters2', $locale)}
+					<li>{tStringReactive('shadowGlassGenerator.parameters2', $locale)}</li>
+				{/if}
+				{#if tStringReactive('shadowGlassGenerator.parameters3', $locale)}
+					<li>{tStringReactive('shadowGlassGenerator.parameters3', $locale)}</li>
+				{/if}
+				{#if tStringReactive('shadowGlassGenerator.parameters4', $locale)}
+					<li>{tStringReactive('shadowGlassGenerator.parameters4', $locale)}</li>
+				{/if}
+				{#if tStringReactive('shadowGlassGenerator.parameters5', $locale)}
+					<li>{tStringReactive('shadowGlassGenerator.parameters5', $locale)}</li>
+				{/if}
+				{#if tStringReactive('shadowGlassGenerator.parameters6', $locale)}
+					<li>{tStringReactive('shadowGlassGenerator.parameters6', $locale)}</li>
+				{/if}
+				{#if tStringReactive('shadowGlassGenerator.parameters7', $locale)}
+					<li>{tStringReactive('shadowGlassGenerator.parameters7', $locale)}</li>
+				{/if}
+				{#if tStringReactive('shadowGlassGenerator.parameters8', $locale)}
+					<li>{tStringReactive('shadowGlassGenerator.parameters8', $locale)}</li>
+				{/if}
+				{#if tStringReactive('shadowGlassGenerator.parameters9', $locale)}
+					<li>{tStringReactive('shadowGlassGenerator.parameters9', $locale)}</li>
+				{/if}
+				{#if tStringReactive('shadowGlassGenerator.parameters10', $locale)}
+					<li>{tStringReactive('shadowGlassGenerator.parameters10', $locale)}</li>
+				{/if}
+				{#if tStringReactive('shadowGlassGenerator.parameters11', $locale)}
+					<li>{tStringReactive('shadowGlassGenerator.parameters11', $locale)}</li>
+				{/if}
+				{#if tStringReactive('shadowGlassGenerator.parameters12', $locale)}
+					<li>{tStringReactive('shadowGlassGenerator.parameters12', $locale)}</li>
+				{/if}
+				{#if tStringReactive('shadowGlassGenerator.parameters13', $locale)}
+					<li>{tStringReactive('shadowGlassGenerator.parameters13', $locale)}</li>
+				{/if}
+				{#if tStringReactive('shadowGlassGenerator.parameters14', $locale)}
+					<li>{tStringReactive('shadowGlassGenerator.parameters14', $locale)}</li>
+				{/if}
+			</ul>
+		</section>
+
+		<section>
 			<h2 class="text-2xl font-semibold mb-4">{tStringReactive('shadowGlassGenerator.whenToUse', $locale)}</h2>
-			<p class="text-[var(--color-text-muted)] leading-relaxed">
-				{tStringReactive('shadowGlassGenerator.whenToUse1', $locale)}
-			</p>
+			<ul class="text-[var(--color-text-muted)] leading-relaxed space-y-1 list-disc list-inside">
+				{#if tStringReactive('shadowGlassGenerator.whenToUse1', $locale)}
+					<li>{tStringReactive('shadowGlassGenerator.whenToUse1', $locale)}</li>
+				{/if}
+				{#if tStringReactive('shadowGlassGenerator.whenToUse2', $locale)}
+					<li>{tStringReactive('shadowGlassGenerator.whenToUse2', $locale)}</li>
+				{/if}
+				{#if tStringReactive('shadowGlassGenerator.whenToUse3', $locale)}
+					<li>{tStringReactive('shadowGlassGenerator.whenToUse3', $locale)}</li>
+				{/if}
+				{#if tStringReactive('shadowGlassGenerator.whenToUse4', $locale)}
+					<li>{tStringReactive('shadowGlassGenerator.whenToUse4', $locale)}</li>
+				{/if}
+			</ul>
 		</section>
 
 		<section>
 			<h2 class="text-2xl font-semibold mb-4">{tStringReactive('shadowGlassGenerator.commonMistakes', $locale)}</h2>
-			<p class="text-[var(--color-text-muted)] leading-relaxed">
-				{tStringReactive('shadowGlassGenerator.commonMistakes1', $locale)}
-			</p>
+			<ul class="text-[var(--color-text-muted)] leading-relaxed space-y-1 list-disc list-inside">
+				{#if tStringReactive('shadowGlassGenerator.commonMistakes1', $locale)}
+					<li>{tStringReactive('shadowGlassGenerator.commonMistakes1', $locale)}</li>
+				{/if}
+				{#if tStringReactive('shadowGlassGenerator.commonMistakes2', $locale)}
+					<li>{tStringReactive('shadowGlassGenerator.commonMistakes2', $locale)}</li>
+				{/if}
+				{#if tStringReactive('shadowGlassGenerator.commonMistakes3', $locale)}
+					<li>{tStringReactive('shadowGlassGenerator.commonMistakes3', $locale)}</li>
+				{/if}
+			</ul>
 		</section>
 
 		<section>
 			<h2 class="text-2xl font-semibold mb-4">{tStringReactive('shadowGlassGenerator.notes', $locale)}</h2>
+			<ul class="text-[var(--color-text-muted)] leading-relaxed space-y-1 list-disc list-inside">
+				{#if tStringReactive('shadowGlassGenerator.notes1', $locale)}
+					<li>{tStringReactive('shadowGlassGenerator.notes1', $locale)}</li>
+				{/if}
+				{#if tStringReactive('shadowGlassGenerator.notes2', $locale)}
+					<li>{tStringReactive('shadowGlassGenerator.notes2', $locale)}</li>
+				{/if}
+				{#if tStringReactive('shadowGlassGenerator.notes3', $locale)}
+					<li>{tStringReactive('shadowGlassGenerator.notes3', $locale)}</li>
+				{/if}
+				{#if tStringReactive('shadowGlassGenerator.notes4', $locale)}
+					<li>{tStringReactive('shadowGlassGenerator.notes4', $locale)}</li>
+				{/if}
+			</ul>
+		</section>
+
+		<section>
+			<h2 class="text-2xl font-semibold mb-4">{tStringReactive('shadowGlassGenerator.privacy', $locale)}</h2>
 			<p class="text-[var(--color-text-muted)] leading-relaxed">
-				{tStringReactive('shadowGlassGenerator.notes1', $locale)}
+				{tStringReactive('shadowGlassGenerator.privacyText', $locale)}
 			</p>
 		</section>
 	</div>

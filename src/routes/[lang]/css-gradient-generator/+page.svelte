@@ -879,29 +879,85 @@
 
 			<div>
 				<h3 class="text-lg font-semibold mb-3">
+					{tStringReactive('cssGradientGenerator.parameters', $locale)}
+				</h3>
+				<ul class="text-[var(--color-text-muted)] leading-relaxed space-y-1 list-disc list-inside">
+					{#if tStringReactive('cssGradientGenerator.parameters1', $locale)}
+						<li>{tStringReactive('cssGradientGenerator.parameters1', $locale)}</li>
+					{/if}
+					{#if tStringReactive('cssGradientGenerator.parameters2', $locale)}
+						<li>{tStringReactive('cssGradientGenerator.parameters2', $locale)}</li>
+					{/if}
+					{#if tStringReactive('cssGradientGenerator.parameters3', $locale)}
+						<li>{tStringReactive('cssGradientGenerator.parameters3', $locale)}</li>
+					{/if}
+					{#if tStringReactive('cssGradientGenerator.parameters4', $locale)}
+						<li>{tStringReactive('cssGradientGenerator.parameters4', $locale)}</li>
+					{/if}
+					{#if tStringReactive('cssGradientGenerator.parameters5', $locale)}
+						<li>{tStringReactive('cssGradientGenerator.parameters5', $locale)}</li>
+					{/if}
+					{#if tStringReactive('cssGradientGenerator.parameters6', $locale)}
+						<li>{tStringReactive('cssGradientGenerator.parameters6', $locale)}</li>
+					{/if}
+				</ul>
+			</div>
+
+			<div>
+				<h3 class="text-lg font-semibold mb-3">
 					{tStringReactive('cssGradientGenerator.whenToUse', $locale)}
 				</h3>
-				<p class="text-[var(--color-text-muted)] leading-relaxed">
-					{tStringReactive('cssGradientGenerator.whenToUse1', $locale)}
-				</p>
+				<ul class="text-[var(--color-text-muted)] leading-relaxed space-y-1 list-disc list-inside">
+					{#if tStringReactive('cssGradientGenerator.whenToUse1', $locale)}
+						<li>{tStringReactive('cssGradientGenerator.whenToUse1', $locale)}</li>
+					{/if}
+					{#if tStringReactive('cssGradientGenerator.whenToUse2', $locale)}
+						<li>{tStringReactive('cssGradientGenerator.whenToUse2', $locale)}</li>
+					{/if}
+					{#if tStringReactive('cssGradientGenerator.whenToUse3', $locale)}
+						<li>{tStringReactive('cssGradientGenerator.whenToUse3', $locale)}</li>
+					{/if}
+					{#if tStringReactive('cssGradientGenerator.whenToUse4', $locale)}
+						<li>{tStringReactive('cssGradientGenerator.whenToUse4', $locale)}</li>
+					{/if}
+				</ul>
 			</div>
 
 			<div>
 				<h3 class="text-lg font-semibold mb-3">
 					{tStringReactive('cssGradientGenerator.commonMistakes', $locale)}
 				</h3>
-				<p class="text-[var(--color-text-muted)] leading-relaxed">
-					{tStringReactive('cssGradientGenerator.commonMistakes1', $locale)}
-				</p>
+				<ul class="text-[var(--color-text-muted)] leading-relaxed space-y-1 list-disc list-inside">
+					{#if tStringReactive('cssGradientGenerator.commonMistakes1', $locale)}
+						<li>{tStringReactive('cssGradientGenerator.commonMistakes1', $locale)}</li>
+					{/if}
+					{#if tStringReactive('cssGradientGenerator.commonMistakes2', $locale)}
+						<li>{tStringReactive('cssGradientGenerator.commonMistakes2', $locale)}</li>
+					{/if}
+					{#if tStringReactive('cssGradientGenerator.commonMistakes3', $locale)}
+						<li>{tStringReactive('cssGradientGenerator.commonMistakes3', $locale)}</li>
+					{/if}
+				</ul>
 			</div>
 
 			<div>
 				<h3 class="text-lg font-semibold mb-3">
 					{tStringReactive('cssGradientGenerator.notes', $locale)}
 				</h3>
-				<p class="text-[var(--color-text-muted)] leading-relaxed">
-					{tStringReactive('cssGradientGenerator.notes1', $locale)}
-				</p>
+				<ul class="text-[var(--color-text-muted)] leading-relaxed space-y-1 list-disc list-inside">
+					{#if tStringReactive('cssGradientGenerator.notes1', $locale)}
+						<li>{tStringReactive('cssGradientGenerator.notes1', $locale)}</li>
+					{/if}
+					{#if tStringReactive('cssGradientGenerator.notes2', $locale)}
+						<li>{tStringReactive('cssGradientGenerator.notes2', $locale)}</li>
+					{/if}
+					{#if tStringReactive('cssGradientGenerator.notes3', $locale)}
+						<li>{tStringReactive('cssGradientGenerator.notes3', $locale)}</li>
+					{/if}
+					{#if tStringReactive('cssGradientGenerator.notes4', $locale)}
+						<li>{tStringReactive('cssGradientGenerator.notes4', $locale)}</li>
+					{/if}
+				</ul>
 			</div>
 
 			<div class="pt-4 border-t border-[var(--color-border)]">

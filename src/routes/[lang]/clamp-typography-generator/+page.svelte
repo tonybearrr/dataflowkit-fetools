@@ -318,24 +318,81 @@
 		</section>
 
 		<section>
+			<h2 class="text-2xl font-semibold mb-4">{tStringReactive('clampTypography.parameters', $locale)}</h2>
+			<ul class="text-[var(--color-text-muted)] leading-relaxed space-y-1 list-disc list-inside">
+				{#if tStringReactive('clampTypography.parameters1', $locale)}
+					<li>{tStringReactive('clampTypography.parameters1', $locale)}</li>
+				{/if}
+				{#if tStringReactive('clampTypography.parameters2', $locale)}
+					<li>{tStringReactive('clampTypography.parameters2', $locale)}</li>
+				{/if}
+				{#if tStringReactive('clampTypography.parameters3', $locale)}
+					<li>{tStringReactive('clampTypography.parameters3', $locale)}</li>
+				{/if}
+				{#if tStringReactive('clampTypography.parameters4', $locale)}
+					<li>{tStringReactive('clampTypography.parameters4', $locale)}</li>
+				{/if}
+				{#if tStringReactive('clampTypography.parameters5', $locale)}
+					<li>{tStringReactive('clampTypography.parameters5', $locale)}</li>
+				{/if}
+				{#if tStringReactive('clampTypography.parameters6', $locale)}
+					<li>{tStringReactive('clampTypography.parameters6', $locale)}</li>
+				{/if}
+				{#if tStringReactive('clampTypography.parameters7', $locale)}
+					<li>{tStringReactive('clampTypography.parameters7', $locale)}</li>
+				{/if}
+			</ul>
+		</section>
+
+		<section>
 			<h2 class="text-2xl font-semibold mb-4">{tStringReactive('clampTypography.whenToUse', $locale)}</h2>
-			<p class="text-[var(--color-text-muted)] leading-relaxed">
-				{tStringReactive('clampTypography.whenToUse1', $locale)}
-			</p>
+			<ul class="text-[var(--color-text-muted)] leading-relaxed space-y-1 list-disc list-inside">
+				{#if tStringReactive('clampTypography.whenToUse1', $locale)}
+					<li>{tStringReactive('clampTypography.whenToUse1', $locale)}</li>
+				{/if}
+				{#if tStringReactive('clampTypography.whenToUse2', $locale)}
+					<li>{tStringReactive('clampTypography.whenToUse2', $locale)}</li>
+				{/if}
+				{#if tStringReactive('clampTypography.whenToUse3', $locale)}
+					<li>{tStringReactive('clampTypography.whenToUse3', $locale)}</li>
+				{/if}
+				{#if tStringReactive('clampTypography.whenToUse4', $locale)}
+					<li>{tStringReactive('clampTypography.whenToUse4', $locale)}</li>
+				{/if}
+			</ul>
 		</section>
 
 		<section>
 			<h2 class="text-2xl font-semibold mb-4">{tStringReactive('clampTypography.commonMistakes', $locale)}</h2>
-			<p class="text-[var(--color-text-muted)] leading-relaxed">
-				{tStringReactive('clampTypography.commonMistakes1', $locale)}
-			</p>
+			<ul class="text-[var(--color-text-muted)] leading-relaxed space-y-1 list-disc list-inside">
+				{#if tStringReactive('clampTypography.commonMistakes1', $locale)}
+					<li>{tStringReactive('clampTypography.commonMistakes1', $locale)}</li>
+				{/if}
+				{#if tStringReactive('clampTypography.commonMistakes2', $locale)}
+					<li>{tStringReactive('clampTypography.commonMistakes2', $locale)}</li>
+				{/if}
+				{#if tStringReactive('clampTypography.commonMistakes3', $locale)}
+					<li>{tStringReactive('clampTypography.commonMistakes3', $locale)}</li>
+				{/if}
+			</ul>
 		</section>
 
 		<section>
 			<h2 class="text-2xl font-semibold mb-4">{tStringReactive('clampTypography.notes', $locale)}</h2>
-			<p class="text-[var(--color-text-muted)] leading-relaxed">
-				{tStringReactive('clampTypography.notes1', $locale)}
-			</p>
+			<ul class="text-[var(--color-text-muted)] leading-relaxed space-y-1 list-disc list-inside">
+				{#if tStringReactive('clampTypography.notes1', $locale)}
+					<li>{tStringReactive('clampTypography.notes1', $locale)}</li>
+				{/if}
+				{#if tStringReactive('clampTypography.notes2', $locale)}
+					<li>{tStringReactive('clampTypography.notes2', $locale)}</li>
+				{/if}
+				{#if tStringReactive('clampTypography.notes3', $locale)}
+					<li>{tStringReactive('clampTypography.notes3', $locale)}</li>
+				{/if}
+				{#if tStringReactive('clampTypography.notes4', $locale)}
+					<li>{tStringReactive('clampTypography.notes4', $locale)}</li>
+				{/if}
+			</ul>
 		</section>
 
 		<section>
